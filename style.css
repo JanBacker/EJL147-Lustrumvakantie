@@ -1,0 +1,122 @@
+/* Fotokader met pijltjes */
+.elementor-107188 .elementor-top-section > .elementor-container:has(.foto-slider) {
+  align-items: center;
+}
+
+.elementor-107188 .elementor-widget:has(.foto-slider) {
+  width: 100% !important;
+  max-width: 100%;
+}
+
+.foto-slider {
+  position: relative;
+  width: 100%;
+}
+
+.foto-slider__frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #f4f5f7;
+}
+
+.foto-slider__frame img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.foto-slider__frame img.is-active {
+  opacity: 1;
+}
+
+.foto-slider__prev,
+.foto-slider__next {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: #55907c;
+  cursor: pointer;
+}
+
+.foto-slider__prev svg,
+.foto-slider__next svg {
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+
+/* Dag 5: extra kopjes in de lopende tekst, zelfde kleur en maat als de alinea */
+.elementor-107188 .elementor-element-1411c498 h4 {
+  color: #272626;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5em;
+  margin: 1em 0 0.35em;
+}
+
+.foto-slider__prev { left: 10px; }
+.foto-slider__next { right: 10px; }
+
+.foto-slider__prev:hover,
+.foto-slider__next:hover {
+  background: #ffffff;
+}
+
+/* Bovenste menubalk (logo + Home, Lustrumreizen, Stedentrips, Over ons, Start je aanvraag) */
+header.header {
+  display: none !important;
+}
+
+/* Reistijd + funfacts: volle breedte, gelijk verdeeld */
+@media (min-width: 768px) {
+  .elementor-107188 .elementor-element.elementor-element-2e70f653 {
+    width: 100% !important;
+    max-width: none !important;
+    align-self: stretch;
+  }
+
+  .elementor-107188 .elementor-element.elementor-element-2e70f653 > .elementor-container {
+    max-width: none !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .elementor-107188 .elementor-element.elementor-element-2e70f653 > .elementor-container > .elementor-column {
+    width: auto !important;
+    max-width: none !important;
+    flex: 1 1 0 !important;
+  }
+
+  .elementor-107188 .elementor-element.elementor-element-2e70f653 .elementor-widget-heading,
+  .elementor-107188 .elementor-element.elementor-element-2e70f653 .elementor-widget-image,
+  .elementor-107188 .elementor-element.elementor-element-2e70f653 .elementor-widget-text-editor {
+    text-align: center;
+  }
+
+  .elementor-107188 .elementor-element.elementor-element-2e70f653 .elementor-widget-image img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
