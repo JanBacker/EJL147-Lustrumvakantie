@@ -74,10 +74,56 @@
 .foto-slider__prev { left: 10px; }
 .foto-slider__next { right: 10px; }
 
+
 .foto-slider__prev:hover,
 .foto-slider__next:hover {
   background: #ffffff;
 }
+body {
+  background-color:var(--nv-site-bg);
+  color:var(--nv-text-color);
+  font-size:var(--bodyfontsize);
+  line-height:var(--bodylineheight);
+  letter-spacing:var(--bodyletterspacing);
+  font-family:var(--bodyfontfamily),var(--nv-fallback-ff);
+  text-transform:var(--bodytexttransform);
+  font-weight:var(--bodyfontweight);
+  overflow-x:hidden;
+  direction:ltr;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale
+}
+
+.elementor-107188 .elementor-element.elementor-element-10eb4e0e .elementor-heading-title {
+	color: #6FC0A6;
+}
+.elementor-107188 .elementor-element.elementor-element-399fdecf .elementor-heading-title {
+	color: #55907C;
+}
+.elementor-107188 .elementor-element.elementor-element-6adbc8c1 .elementor-icon-list-icon i {
+	color: #6FC0A6;
+	transition: color 0.3s;
+}
+.elementor-107188 .elementor-element.elementor-element-5da41812 .elementor-heading-title {
+	color: #55907C;
+}
+
+.elementor-107188 .elementor-element.elementor-element-1a57d430 .elementor-divider {
+	padding-block-start: 15px;
+	padding-block-end: 15px;
+}
+.elementor-widget-divider .elementor-divider {
+	display: flex;
+}
+.elementor *, .elementor ::after, .elementor ::before {
+	box-sizing: border-box;
+}
+.elementor-107188 .elementor-element.elementor-element-1a57d430 {
+	--divider-border-style: solid;
+	--divider-color: #6FC0A6;
+	--divider-border-width: 1px;
+}
+
 
 /* Bovenste menubalk (logo + Home, Lustrumreizen, Stedentrips, Over ons, Start je aanvraag) */
 header.header {
